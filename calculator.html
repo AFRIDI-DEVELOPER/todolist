@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO-LIST</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2> I Z Z U 🥛</h2>
+               <div class="turns">
+                <button onclick="addNewPage()" class="add">+</button>
+                <button onclick="cutPage()" class="add">✄</button>
+                <button onclick="previousPage()" class="turn">⎗</button>
+                <button onclick="nextPage()" class="turn">⎘</button>
+            </div>
+            <div id="page-info">page 1 of 1</div> <!-- Display current page info -->
+            <div class="row">
+                <input type="text" placeholder="Add your text" id="input-box">
+                <button onclick="addTask()">ADD</button>
+            </div>
+            <ul id="list-container"></ul>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
